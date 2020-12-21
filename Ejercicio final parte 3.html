@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio final parte 3</title>
+</head>
+
+<body>
+    <script>
+      /* let z = parseInt(prompt("Medidas de tablero"));
+      let resultado = "";
+
+      for (let f= 1; f <= z; f = f + 1)
+      {
+        for (let i=1; i <= z; i = i + 1)
+        { 
+        
+            if (z % z == 0)
+            {
+                resultado += i + " ";
+            }  
+                     
+        } 
+        console.log (resultado); 
+      } */
+
+  
+    let resultado = ""
+    let z = parseInt(prompt("Medidas"));
+
+    for (let i = 0; i < z; i++)
+    {
+      if (i % 2 == 0)
+      {
+        for (let j = 0; j < z; j++)
+        {
+          if (j % 2 == 0)
+          {
+            resultado += "X"
+          }  
+           else 
+           {
+            resultado += "O"  
+           } 
+        }
+        console.log (resultado);
+        resultado = ""
+      }
+      else 
+      {
+        for (let j = 0; j < z; j++)
+        {
+          if (j % 2 == 0)
+          {
+            resultado += "O"
+          }
+          else 
+          {
+            resultado += "X"
+          }
+        }
+        console.log (resultado);
+        resultado = ""
+      }
+    }
+
+
+      
+                
+    </script>
+</body>
+
+</html>
